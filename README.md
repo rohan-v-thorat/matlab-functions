@@ -1,1 +1,1 @@
-This repository contains Matlab functions which are usually used in the mechanical domain
+This MATLAB function implements a discrete state-space model of the Duffing oscillator, a nonlinear dynamical system that is widely used.
