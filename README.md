@@ -1,1 +1,1 @@
-This repository contains matlab function which are usually used in mechanical domain
+This repository contains Matlab functions which are usually used in the mechanical domain
