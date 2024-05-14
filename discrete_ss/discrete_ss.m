@@ -7,13 +7,14 @@
 % >>u = 1;
 % >>gacc = 1;
 % >>x = [1;1]; % state at time t
-% >>x = discrete_ss(x,para,u,gacc); % state at time t+1
+% >>dt = 0.01; % timestep size
+% >>x = discrete_ss(x,para,u,gacc,dt); % state at time t+1
 %
+% Author: Rohan Thorat (rohanthorat2@gmail.com)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function output = discrete_ss(x,para,u,gacc)
+function output = discrete_ss(x,para,u,gacc,dt)
 
-dt = 0.01;
 tspan = [0 dt];
 x0 = x;
 [t,output] = ode45(@(t,x)continuous_ss(x,para,u,gacc),tspan,x0);
